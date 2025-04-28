@@ -1,0 +1,110 @@
+Welcome to MineCraft MazeRunner!
+--------------------------------
+
+------------- MAIN MENU -------------
+1) Generate Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+------------- GENERATE MAZE -------------
+1) Read Maze from terminal
+2) Generate Random Maze
+3) Back
+
+Enter Menu item to continue: 
+In Minecraft, please navigate to where you need the maze
+to be built in Minecraft and type - done:
+Enter the length and width of the maze(odd numbers only, minimum 3,and maximum 99).
+Enter the length (x length)
+Enter the width (z length)
+Please enter the structure of the maze:
+Maze read successfully
+**Printing Maze**
+BasePoint: (22, 72, 1343)
+Structure: 
+x.xxx
+x.x.x
+x.x.x
+x.x.x
+x.x.x
+x...x
+xxxxx
+**End of Printing Maze**
+
+Do you want to validate the maze? (Please select 1 or 2)
+1)Yes
+2)No
+
+------------- MAIN MENU -------------
+1) Generate Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+The maze is being built. Please standby!
+Flattening the earth...
+Readying the area...
+Building the maze...
+The maze is built! Thank you for bearing with us.
+
+------------- MAIN MENU -------------
+1) Generate Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+------------- SOLVE MAZE -------------
+1) Solve Manually
+2) Show Escape Route
+3) Back
+
+Enter Menu item to continue: 
+
+------------- SOLVE MAZE -------------
+1) Solve Manually
+2) Show Escape Route
+3) Back
+
+Enter Menu item to continue: 
+Select how you want to solve the maze: 
+1) Basic
+2) Extension
+(23,72,1344)
+(24,72,1344)
+(25,72,1344)
+(26,72,1344)
+(27,72,1344)
+(27,72,1345)
+(27,72,1346)
+(26,72,1346)
+(25,72,1346)
+(24,72,1346)
+(23,72,1346)
+(22,72,1346)
+
+------------- SOLVE MAZE -------------
+1) Solve Manually
+2) Show Escape Route
+3) Back
+
+Enter Menu item to continue: 
+
+------------- MAIN MENU -------------
+1) Generate Maze
+2) Build Maze in MineCraft
+3) Solve Maze
+4) Show Team Information
+5) Exit
+
+Enter Menu item to continue: 
+
+The End!
