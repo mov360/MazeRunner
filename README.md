@@ -1,4 +1,3 @@
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -6,8 +5,8 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#how-it-works?">How It Works?</a></li>
-        <li><a href="#future-Extensions">Future Extensions</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#future-extensions">Future Extensions</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -24,10 +23,8 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## 📘About The Project
+## 📘 About The Project
 
 **Maze Runner** is a C++ application inspired by **Minecraft**, designed to simulate maze structures and guide a player or agent through them to find an exit. The project emphasizes both performance and user accessibility, allowing anyone to explore algorithmic maze-solving without needing any programming knowledge.
 
@@ -51,61 +48,53 @@ If your maze doesn't meet these criteria, the application includes a powerful ex
 
 **⚠️ Watch the video for a full walkthrough of the application and how it works — it’s highly recommended before you start!**
 
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🧬How It Works?
+## 🧬 How It Works
 
 The **Maze Runner** application is a terminal-based C++ program that allows users to interact with and manipulate mazes through a structured and user-friendly interface.
 
-#### Maze Generation
+### Maze Generation
 Users can generate randomized mazes by specifying the desired width and height (odd integers only). The maze generation leverages a **recursive backtracking algorithm** to ensure unique and solvable maze patterns on each run. A **dynamic 2D array** is used for memory-efficient construction and manipulation of the maze structure. This design allows users to easily regenerate or resize the maze as needed.
 
-#### Custom Maze Import
-The application supports importing user defined maze structures. Once a custom maze is uploaded, it can be validated using integrated algorithms. The validation process uses a combination of **backtracking** and **depth-first search (DFS)** to ensure the maze conforms to the following constraints:
-- Exactly one valid entry and exit,
-- No circular paths (loops),
-- No isolated cells.
+### Custom Maze Import
+The application supports importing user-defined maze structures. Once a custom maze is uploaded, it can be validated using integrated algorithms. The validation process uses a combination of **backtracking** and **depth-first search (DFS)** to ensure the maze conforms to the following constraints:
+- Exactly one valid entry and exit
+- No circular paths (loops)
+- No isolated cells
 
-#### Minecraft Integration
+### Minecraft Integration
 Once a valid maze structure is confirmed, users can render the maze within a Minecraft world. The system uses Minecraft API to place the maze in a user-specified location, enabling real-time exploration of the generated maze structure.
 
-#### Maze Solving
+### Maze Solving
 Users can attempt to solve the maze manually or request automated assistance. The system tracks player movement using a **linked list data structure**, allowing for real-time intervention and analysis. The solving agent supports multiple algorithms:
-- **Wall-Following Algorithm** (right-hand rule),
-- **Breadth-First Search (BFS)** for optimal pathfinding. (Not recommended due to it it's unstability)
+- **Wall-Following Algorithm** (right-hand rule)
+- **Breadth-First Search (BFS)** for optimal pathfinding (not recommended due to its instability)
 
 These algorithms ensure reliable and efficient navigation from entry to exit.
 
-#### Resource Management
+### Resource Management
 Once the current maze is deleted, the terrain is restored to its original state, as it was before the maze was generated. All memory allocations, including dynamic arrays and linked lists, are efficiently managed and properly deallocated upon program termination. This ensures that the application remains lightweight, with no risk of memory leaks or unnecessary system resource consumption.
 
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
+## 🔮 Future Extensions
+- Improved maze solving feature
+- Improved maze validation feature
+- More customization
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
-## 🔮Future Extensions
-* Improved maze solving feature
-* Improved maze validation feature
-* More customization
+## 🦫 Built With
 
+- C++17
+- Spigot API
+- g++
+- Make
+- Terminal 
+- lmcpp
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### 🦫Built With
-
-* C++17
-* Spigot API
-* g++
-* Make
-* Terminal 
-* lmcpp
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## 🎬 Getting Started
@@ -118,36 +107,36 @@ Please follow the steps below to set up the project locally.
 
 📦 Install C++17 if not:
 
-* macOS:
+- macOS:
     ```sh
     xcode-select --install
     ```
-* WSL/Linux:
+- WSL/Linux:
     ```sh
     sudo apt-get install make g++
     ```
 
-2. Install cmake:
+2. Install CMake:
 
-* macOS:
+- macOS:
     1. Install Brew if you do not have it yet:
         ```sh
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         ```
-    2. Install cmake:
+    2. Install CMake:
         ```sh
         brew install cmake
         ```
-* WSL/Linux:
+- WSL/Linux:
     ```sh
     sudo apt install cmake
     ```
 
 3. Install mcpp:
 
-* macOS/Linux/WSL:
+- macOS/Linux/WSL:
     ```sh
-    cd ~  && mkdir MyWorld
+    cd ~ && mkdir MyWorld
     cd MyWorld
     git clone https://github.com/rozukke/mcpp.git && cd mcpp
     cmake -B build && cd build
@@ -160,7 +149,7 @@ Please follow the steps below to set up the project locally.
 
 4. Install Spigot Server:
 
-* macOS/Linux/WSL:
+- macOS/Linux/WSL:
     ```sh
     cd MyWorld
     git clone https://github.com/rozukke/minecraft_tools.git
@@ -171,19 +160,21 @@ Please follow the steps below to set up the project locally.
     sudo apt upgrade
     sudo apt install openjdk-17-jdk
     ```
-You will end up having a file "minecraft_tools " somewhere in MyWorld folder. There should be the file to run the server. for WSL/Linux and macOS , it will be called "./start_server.sh" and "./start.command" respectively. You have to run this everytime you login to minecraft to use this application.
+You will end up having a file `minecraft_tools` somewhere in the MyWorld folder. There should be the file to run the server.  
+For WSL/Linux and macOS, it will be called `./start_server.sh` and `./start.command` respectively.  
+You have to run this every time you log in to Minecraft to use this application.
 
 5. Join the Minecraft Server:
-    ```sh
-    1. Please install Minecraft Java Edition
+    ```
+    1. Please install Minecraft Java Edition.
 
-    2. Run the Minecraft launcher, then select the Installations tab up the top. Select New Installation, name it "1.19.4", then select "release 1.19.4" from the dropdown and click Create
+    2. Run the Minecraft launcher, then select the Installations tab up the top. Select New Installation, name it "1.19.4", then select "release 1.19.4" from the dropdown and click Create.
 
-    3. Now go back to the Play tab and ensure that you have the 1.19.4 release selected down at the bottom-left:
+    3. Now go back to the Play tab and ensure that you have the 1.19.4 release selected down at the bottom-left.
 
-    4. Click on the Play button. Once the game launches, click on Multiplayer, then Add Server. Enter the details below, with server address "::1", then click Done
+    4. Click on the Play button. Once the game launches, click on Multiplayer, then Add Server. Enter the details below, with server address "::1", then click Done.
 
-    5. You should now be able to join a game by clicking Join Server or double-clicking the Server that appears
+    5. You should now be able to join a game by clicking Join Server or double-clicking the Server that appears.
     ```
 
 ---
@@ -196,38 +187,43 @@ Follow the instructions below to clone and run the project:
     ```sh
     git clone https://github.com/mov360/Maze-Runner.git
     ```
+
 2. Navigate to the project directory:
     ```sh
     cd Maze-Runner
     ```
+
 3. Build:
     ```sh
     make
     ```
+
 4. Run the server:
-* macOS:
+
+- macOS:
     ```sh
     ./start.command
-    or Just click on the file
+    # or just click on the file
     ```
-* WSL/Linux:
+- WSL/Linux:
     ```sh
-    sudo chmod a+x start_server.sh 
-    or Just click on the file
+    sudo chmod a+x start_server.sh
+    ./start_server.sh
+    # or just click on the file
     ```
+
 5. Run the application:
-```sh
+    ```sh
     ./mazeRunner
     ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
-
-
-<!-- How To Use EXAMPLES -->
+<!-- HOW TO USE -->
 ## 📑 How To Use
 
-Please spawn into the server world in Minecraft. Then run the application from your terminal. You can use the terminal as a UI to send commands to Minecraft.  
+Please spawn into the server world in Minecraft. Then run the application from your terminal.  
+You can use the terminal as a UI to send commands to Minecraft.  
 You will be prompted with options in the terminal — you can generate or solve the maze by choosing options.  
 The UI is user-friendly and intuitive, but you can also read the use cases below for more detailed guidance.
 
@@ -300,9 +296,7 @@ Otherwise, it may cause an error.
 💡 **Note:**  
 The extended solving algorithm is still under development and may behave unexpectedly in certain cases.
 
----
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 ---
 
@@ -310,14 +304,14 @@ The extended solving algorithm is still under development and may behave unexpec
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
 
 ---
 
 ## 📬 Contact
 
-**Mohammad Ullah** – [ullahm2004@gmail.com](mailto:ullahm2004@gmail.com)  
+**Mohammad Ullah** – [ullahm2004@gmail.com](mailto:ullahm2004@gmail.com)
 
 Project Link: [Maze Runner](https://github.com/mov360/Maze-Runner.git)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#table-of-contents">back to top</a>)</p>
